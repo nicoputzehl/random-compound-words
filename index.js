@@ -23,6 +23,5 @@ function randomCompoundWord() {
 	return adjective + noun + number;
 }
 
-const rcw = randomCompoundWord();
 
-export { rcw };
+exports.rcw = randomCompoundWord();
