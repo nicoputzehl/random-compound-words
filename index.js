@@ -23,4 +23,4 @@ function randomCompoundWord() {
 	return adjective + noun + number;
 }
 
-console.log(randomCompoundWord());
+return randomCompoundWord();
