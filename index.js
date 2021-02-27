@@ -15,13 +15,10 @@ function randomElement(array) {
 function capitalize(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
-function randomCompoundWord() {
+module.exports = function randomCompoundWord() {
 	const adjective = capitalize(randomElement(horror));
 	const noun = randomElement(nouns);
 	const number = randomElement(numbers);
 
 	return adjective + noun + number;
 }
-
-
-exports.rcw = randomCompoundWord();
