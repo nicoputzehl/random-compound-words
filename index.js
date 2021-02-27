@@ -12,8 +12,8 @@ function randomElement(array) {
 	return array[getRandomIntInclusive(0, array.length - 1)];
 }
 
-function capitalize(str){
-  return str.charAt(0).toUpperCase()+str.slice(1);
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 function randomCompoundWord() {
 	const adjective = capitalize(randomElement(horror));
@@ -23,4 +23,6 @@ function randomCompoundWord() {
 	return adjective + noun + number;
 }
 
-return randomCompoundWord();
+const rcw = randomCompoundWord();
+
+export { rcw };
