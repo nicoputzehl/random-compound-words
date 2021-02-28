@@ -1,6 +1,5 @@
-const { horror } = require("./words/adjectives");
-const { nouns } = require("./words/nomen");
-const { numbers } = require("./words/numbers");
+const { horror } = require("./words/horrorwords");
+const { nouns } = require("./words/nouns");
 
 function getRandomIntInclusive(min, max) {
 	min = Math.ceil(min);
@@ -18,7 +17,7 @@ function capitalize(str) {
 export function randomCompoundWord() {
 	const adjective = capitalize(randomElement(horror));
 	const noun = randomElement(nouns);
-	const number = randomElement(numbers);
+	const number = randomElement(getRandomIntInclusive(1,1337));
 
 	return adjective + noun + number;
 }
