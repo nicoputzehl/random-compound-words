@@ -15,7 +15,7 @@ function randomElement(array) {
 function capitalize(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
-module.exports = function randomCompoundWord() {
+export function randomCompoundWord() {
 	const adjective = capitalize(randomElement(horror));
 	const noun = randomElement(nouns);
 	const number = randomElement(numbers);
