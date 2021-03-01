@@ -3,7 +3,7 @@ exports.horror = [
   "faulig",
   "Fleischhaken",
   "Geistertanz",
-  "Grabesdurft",
+  "Grabesduft",
   "Höllenbrut",
   "Knochenhügel",
   "Metzelei",

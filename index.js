@@ -14,10 +14,12 @@ function randomElement(array) {
 function capitalize(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
-export function randomCompoundWord() {
+function randomCompoundWord() {
 	const adjective = capitalize(randomElement(horror));
 	const noun = randomElement(nouns);
-	const number = getRandomIntInclusive(1,1337);
+	const number = getRandomIntInclusive(1, 1337);
 
 	return adjective + noun + number;
 }
+
+module.exports = { randomCompoundWord };
